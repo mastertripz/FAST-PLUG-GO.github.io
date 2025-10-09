@@ -1,0 +1,270 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAST PLUG-GO — Free VPN Files</title>
+  <meta name="description" content="FAST PLUG-GO — Free VPN files and configs. Developer: TRIPZ TR GAMING. CEO: TRIPZ TR. Tech: MASTER. Manager: MASTER TECH." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#00d4ff; --accent-2:#6dfc8c;
+      --glass: rgba(255,255,255,0.04);
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071021 0%, #071628 50%, #051018 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      gap:32px;
+      padding:28px;
+    }
+    .container{max-width:1100px;margin:0 auto;width:100%}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:grid;place-items:center;font-weight:700;color:#052022;
+      box-shadow:0 6px 20px rgba(0,0,0,0.45);
+      font-family: Inter, sans-serif;
+    }
+    h1{font-size:20px;margin:0}
+    .tag{font-size:12px;color:var(--muted);margin-top:2px}
+    nav{display:flex;gap:12px;align-items:center}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:var(--accent);cursor:pointer}
+    main{display:grid;grid-template-columns:1fr;gap:24px}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:24px;border-radius:14px;display:flex;gap:18px;align-items:center}
+    .hero .left{flex:1}
+    .hero h2{margin:0;font-size:28px}
+    .hero p{color:var(--muted);margin-top:8px}
+    .cta{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+    .primary{background:var(--accent);color:#052022;padding:10px 14px;border-radius:10px;border:none;font-weight:600;cursor:pointer}
+    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted)}
+    .hero .right{width:220px;}
+    .card{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .vpn-list{display:grid;gap:12px}
+    .vpn-item{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .vpn-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .badge{background:rgba(255,255,255,0.04);padding:4px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+    .download{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#022; padding:8px 12px;border-radius:10px;border:none;font-weight:700;cursor:pointer;text-decoration:none}
+    .team{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .person{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.02)}
+    footer{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px;padding-top:8px}
+    .admin-panel{margin-top:12px;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    label{display:block;margin-top:8px;color:var(--muted);font-size:13px}
+    input[type="text"], input[type="url"], input[type="password"], select{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .row{display:flex;gap:8px}
+    .small{padding:6px 8px;font-size:13px;cursor:pointer}
+    .danger{background:#ff6b6b;color:#071018;border:none;border-radius:8px;padding:8px 10px;cursor:pointer}
+    .muted{color:var(--muted);font-size:13px}
+    @media (max-width:920px){
+      .team{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      body{padding:18px}
+      .hero{flex-direction:column;align-items:flex-start}
+      .team{grid-template-columns:1fr}
+      header{gap:8px}
+      .logo{width:48px;height:48px}
+    }
+    .note{color:var(--muted);font-size:13px;margin-top:8px}
+    .search{display:flex;gap:8px}
+    input[type="search"]{background:transparent;border:1px solid rgba(255,255,255,0.04);color:inherit;padding:8px 10px;border-radius:8px;min-width:180px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FPG</div>
+        <div>
+          <h1>FAST PLUG‑GO</h1>
+          <div class="tag">Free VPN files • Configs • Tunnels</div>
+        </div>
+      </div>
+      <nav>
+        <div class="search" title="Search VPNs">
+          <input id="q" type="search" placeholder="Search VPN name (e.g. http custom)" oninput="filterList()" />
+        </div>
+        <button class="btn" onclick="toggleTheme()">Toggle Theme</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero card" aria-labelledby="hero-title">
+        <div class="left">
+          <h2 id="hero-title">FAST PLUG‑GO — grab free VPN files & configs</h2>
+          <p>Download ready-to-use VPN configs (HTTP Custom, NetMod, Dark Tunnel, NPV Tunnel, Let's VPN Go, HA Tunnel). Use official clients to import and connect. For personal use only.</p>
+          <div class="cta">
+            <a class="primary" href="#downloads">View VPN Files</a>
+            <button class="secondary" onclick="copyWhats()">Contact via WhatsApp</button>
+          </div>
+          <div class="note">Developer: TRIPZ TR GAMING • CEO: TRIPZ TR • Tech: MASTER • Manager: MAVEST</div>
+        </div>
+      </section>
+
+      <section id="downloads" class="card">
+        <h3 style="margin:0 0 12px 0">Available VPN Files</h3>
+        <!-- Network Filter Buttons -->
+        <div class="row" style="margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+          <button class="small primary" onclick="setNetworkFilter('')">All</button>
+          <button class="small" onclick="setNetworkFilter('Telkom')">Telkom</button>
+          <button class="small" onclick="setNetworkFilter('Vodacom')">Vodacom</button>
+          <button class="small" onclick="setNetworkFilter('MTN')">MTN</button>
+          <button class="small" onclick="setNetworkFilter('Cell C')">Cell C</button>
+        </div>
+        <div class="vpn-list" id="vpnList"></div>
+        <div class="note" style="margin-top:12px">
+          Tip: If a download link doesn't start immediately,restart the web </div>
+      </section>
+
+      <!-- Admin Panel -->
+      <section class="card">
+        <h3 style="margin:0 0 12px 0">Admin Panel</h3>
+        <div id="adminArea" class="admin-panel">
+          <div id="adminLogin">
+            <div class="muted"></div>
+            <label for="adminPass">Password</label>
+            <input id="adminPass" type="password" placeholder="Enter admin password" />
+            <div style="margin-top:8px" class="row">
+              <button class="small primary" onclick="loginAdmin()">Login</button>
+              <button class="small" onclick="fillDemo()"><strong>import</strong></button>
+            </div>
+            <div class="note" style="margin-top:8px"></div>
+          </div>
+
+          <div id="adminControls" style="display:none">
+            <div class="muted">You are logged in as Admin.</div>
+            <label for="fileName">File name / title</label>
+            <input id="fileName" type="text" placeholder="e.g. HTTP Custom config" />
+
+            <label for="fileType">Type</label>
+            <input id="fileType" type="text" placeholder="e.g. http custom, netmod, dark tunnel" />
+
+            <label for="fileNetwork">Network</label>
+            <select id="fileNetwork">
+              <option value="">Select Network</option>
+              <option value="Telkom">Telkom</option>
+              <option value="Vodacom">Vodacom</option>
+              <option value="MTN">MTN</option>
+              <option value="Cell C">Cell C</option>
+            </select>
+
+            <label for="fileURL">Download URL (full URL or relative)</label>
+            <input id="fileURL" type="url" placeholder="/downloads/my-config.zip" />
+
+            <div style="margin-top:8px" class="row">
+              <button class="small primary" onclick="addFile()">Add File</button>
+              <button class="small danger" onclick="logoutAdmin()">Logout</button>
+            </div>
+
+            <div style="margin-top:12px" class="muted">Current files (only admin can delete):</div>
+            <div id="adminFileList" style="margin-top:8px"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3 style="margin:0 0 12px 0">Disclaimer & Privacy</h3>
+        <p class="note">FAST PLUG‑GO provides configuration files for VPN clients. Use these configs responsibly and only for lawful activity. FAST PLUG‑GO and the listed team are not responsible for misuse. Free resources may be limited in speed and availability. We respect privacy — we do not collect personal data on downloads from this static site.</p>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div>© <strong>FAST PLUG‑GO</strong> • Developer: TRIPZ TR GAMING</div>
+    </footer>
+  </div>
+
+  <script>
+    const ADMIN_PASSWORD='TUMELOFASTPLUG';
+    const STORAGE_KEY='fpg_files_v1';
+    const ADMIN_SESSION_KEY='fpg_admin_logged_in';
+    let currentNetworkFilter='';
+
+    const DEFAULT_FILES=[
+      {name:'HTTP Custom', type:'http custom', network:'Telkom', url:'/downloads/http-custom.zip'},
+      {name:'NetMod', type:'netmod', network:'Vodacom', url:'/downloads/netmod.zip'},
+      {name:'Dark Tunnel', type:'dark tunnel', network:'MTN', url:'/downloads/dark-tunnel.zip'},
+      {name:'NPV Tunnel', type:'npv tunnel', network:'Cell C', url:'/downloads/npv-tunnel.zip'},
+      {name:"Let's VPN Go", type:"lets vpn go", network:'Telkom', url:'/downloads/lets-vpn-go.zip'},
+      {name:'HA Tunnel', type:'ha tunnel', network:'Vodacom', url:'/downloads/ha-tunnel.zip'}
+    ];
+
+    function getFilesFromStorage(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY))||[]; } catch(e){ return []; } }
+    function saveFilesToStorage(list){ localStorage.setItem(STORAGE_KEY,JSON.stringify(list||[])); }
+    if(!getFilesFromStorage().length) saveFilesToStorage(DEFAULT_FILES.slice());
+
+    function setNetworkFilter(net){ currentNetworkFilter=net; renderList(); }
+
+    function renderList(){
+      const list=getFilesFromStorage()||[];
+      const container=document.getElementById('vpnList');
+      container.innerHTML='';
+      list.forEach((f,idx)=>{
+        if(currentNetworkFilter && f.network!==currentNetworkFilter) return;
+        const item=document.createElement('div'); item.className='vpn-item';
+        const left=document.createElement('div'); left.className='vpn-meta';
+        left.innerHTML=`<div style="font-weight:700">${escapeHtml(f.name)}</div>
+          <div class="badge">${escapeHtml(f.type||'Config')}</div>
+          <div class="badge">${escapeHtml(f.network||'Unknown')}</div>`;
+        const right=document.createElement('div'); right.style.display='flex'; right.style.gap='8px';
+        const a=document.createElement('a'); a.className='download'; a.href=f.url||'#'; a.setAttribute('download',''); a.textContent='Download'; a.target='_blank'; a.rel='noopener'; right.appendChild(a);
+        const infoBtn=document.createElement('button'); infoBtn.className='btn'; infoBtn.textContent='Info'; infoBtn.onclick=()=>showInfo(f.name,`Type: ${f.type||'Config'}\nNetwork: ${f.network||'N/A'}\nURL: ${f.url}`); right.appendChild(infoBtn);
+        if(isAdminLoggedIn()){ const delBtn=document.createElement('button'); delBtn.className='danger'; delBtn.textContent='Delete'; delBtn.onclick=()=>{if(confirm('Delete this file?')) deleteFile(idx);}; right.appendChild(delBtn); }
+        item.appendChild(left); item.appendChild(right); container.appendChild(item);
+      });
+      renderAdminFileList();
+    }
+
+    function renderAdminFileList(){
+      const adminList=document.getElementById('adminFileList'); if(!adminList) return;
+      const list=getFilesFromStorage()||[]; adminList.innerHTML='';
+      if(!list.length){ adminList.innerHTML='<div class="muted">No files added yet.</div>'; return; }
+      list.forEach((f,idx)=>{
+        const row=document.createElement('div'); row.style.display='flex'; row.style.justifyContent='space-between'; row.style.alignItems='center'; row.style.padding='8px'; row.style.borderBottom='1px dashed rgba(255,255,255,0.03)';
+        const left=document.createElement('div'); left.innerHTML=`<strong>${escapeHtml(f.name)}</strong> <span class="muted">(${escapeHtml(f.type)})</span> <span class="muted">[${escapeHtml(f.network||'N/A')}]</span><div class="muted" style="font-size:12px">${escapeHtml(f.url)}</div>`;
+        const controls=document.createElement('div'); const del=document.createElement('button'); del.className='danger'; del.textContent='Delete'; del.onclick=()=>{if(confirm('Delete this file?')) deleteFile(idx);}; controls.appendChild(del); row.appendChild(left); row.appendChild(controls); adminList.appendChild(row);
+      });
+    }
+
+    function loginAdmin(){ const pass=document.getElementById('adminPass').value||''; if(pass===ADMIN_PASSWORD){ sessionStorage.setItem(ADMIN_SESSION_KEY,'1'); document.getElementById('adminLogin').style.display='none'; document.getElementById('adminControls').style.display=''; renderList(); alert('Admin logged in.'); } else alert('Incorrect password.'); }
+    function logoutAdmin(){ sessionStorage.removeItem(ADMIN_SESSION_KEY); document.getElementById('adminLogin').style.display=''; document.getElementById('adminControls').style.display='none'; renderList(); alert('Logged out.'); }
+    function isAdminLoggedIn(){ return sessionStorage.getItem(ADMIN_SESSION_KEY)==='1'; }
+
+    function addFile(){
+      const name=(document.getElementById('fileName').value||'').trim();
+      const type=(document.getElementById('fileType').value||'').trim();
+      const url=(document.getElementById('fileURL').value||'').trim();
+      const network=(document.getElementById('fileNetwork').value||'').trim();
+      if(!name||!url){ alert('Provide name & URL'); return; }
+      const list=getFilesFromStorage()||[];
+      if(list.length>=30){ alert('Reached 30-file limit. Delete some files first.'); return; }
+      list.push({name,type,url,network});
+      saveFilesToStorage(list);
+      document.getElementById('fileName').value=''; document.getElementById('fileType').value=''; document.getElementById('fileURL').value=''; document.getElementById('fileNetwork').value='';
+      renderList(); alert('File added successfully.');
+    }
+
+    function deleteFile(idx){ const list=getFilesFromStorage()||[]; if(idx<0||idx>=list.length) return; list.splice(idx,1); saveFilesToStorage(list); renderList(); }
+
+    function filterList(){ const q=document.getElementById('q').value.trim().toLowerCase(); document.querySelectorAll('.vpn-item').forEach(item=>{ const name=item.dataset.name||''; item.style.display=(!q||name.includes(q))?'flex':'none'; }); }
+    function showInfo(title,text){ alert(title+'\n\n'+text); }
+    function copyWhats(){ const num='0815923384'; navigator.clipboard?.writeText(num).then(()=>alert('WhatsApp number copied: '+num)).catch(()=>alert('WhatsApp number: '+num)); }
+    function toggleTheme(){ document.body.style.filter=document.body.style.filter?'':'invert(.03) hue-rotate(180deg)'; }
+    function fillDemo(){ if(!confirm('Overwrite current files with demo?')) return; saveFilesToStorage(DEFAULT_FILES.slice()); renderList(); alert('Demo files loaded.'); }
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+    (function init(){ if(isAdminLoggedIn()){ document.getElementById('adminLogin').style.display='none'; document.getElementById('adminControls').style.display=''; } renderList(); })();
+  </script>
+</body>
+</html>
